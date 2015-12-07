@@ -168,12 +168,6 @@ WHY DID THEY USE SQUARE BRACES FOR COMPUTED PROPERTIES!?
 
 If only there was an existing way to say 'Do this first', OH WAIT!
 
-Also get's a little confusing when you mix'n'match:
-
-```
-{x: 'majigger', y, z}
-```
-
 ```
 // Calculate 5 + 6 first.
 var x = (5 + 6) * 10;
@@ -186,6 +180,12 @@ Wouldn't that have been nicer?
     // CALCULATE THIS: THEN ASSIGN THIS!
     ('hello' + value): value
 }
+```
+
+Also literals get a little confusing when you mix'n'match:
+
+```
+{x: 'majigger', y, z}
 ```
 
 # template strings
