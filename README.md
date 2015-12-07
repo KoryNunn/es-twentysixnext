@@ -1,6 +1,6 @@
 # es-twentynextsixbabel
 
-Warning: contains both facts and opinions.
+Warning: contains both facts and opinions about es-whateverthefuck.
 
 Many things taken from here: https://github.com/lukehoban/es6features
 
@@ -168,6 +168,12 @@ WHY DID THEY USE SQUARE BRACES FOR COMPUTED PROPERTIES!?
 
 If only there was an existing way to say 'Do this first', OH WAIT!
 
+Also get's a little confusing when you mix'n'match:
+
+```
+{x: 'majigger', y, z}
+```
+
 ```
 // Calculate 5 + 6 first.
 var x = (5 + 6) * 10;
@@ -176,10 +182,10 @@ var x = (5 + 6) * 10;
 Wouldn't that have been nicer?
 
 ```
-    {
-        // CALCULATE THIS: THEN ASSIGN THIS!
-        ('hello' + value): value
-    }
+{
+    // CALCULATE THIS: THEN ASSIGN THIS!
+    ('hello' + value): value
+}
 ```
 
 # template strings
@@ -434,7 +440,7 @@ They exist.
 
 # unicode
 
-There is new unicode support. Seems fine, I'm lazy, ¯\_(ツ)_/¯
+There is new unicode support. Seems fine, I'm lazy, ¯\\_(ツ)_/¯
 
 # modules
 
@@ -471,7 +477,7 @@ Nothing super bad that I know of.
 # module loaders
 
 Kinda ties in with the above stuff, allows you to screw with the module cache.
-I'm going to ¯\_(ツ)_/¯ this one too.
+I'm going to ¯\\_(ツ)_/¯ this one too.
 
 # map + set + weakmap + weakset
 
