@@ -224,13 +224,11 @@ Let's write a function that implements template strings,
 with the added bonus of the string not pulling random crap from scope:
 
 ```
-function template(string, scope){
-    return string.replace(/\{(.+?)\}/g, (match, key) => key in scope ? scope[key], match);
-}
+var template = (string, scope) => string.replace(/\$\{(.+?)\}/g, (match, key) => scope[key]);
 
 var world = 'planet';
 
-template('Hello {world}', {world}) // -> 'Hello planet'
+template('Hello ${world}', {world}) // -> 'Hello planet'
 ```
 
 Wow I can see why that's a language feature..
