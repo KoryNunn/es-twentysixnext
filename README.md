@@ -160,7 +160,17 @@ function createPerson(firstName, surname, age){
 
 ## The Bad
 
-Functionally, there is nothing bad about these features
+~~Functionally, there is nothing bad about these features~~
+
+Nevermind, of cource there are problems.
+
+```
+var x = {y} //legit
+var x = {get} // fucked
+```
+
+Because `get` is a magic property used for getter/setters..
+
 
 ## The ugly
 

@@ -1,0 +1,26 @@
+{
+  "name": "es-twentysixnext",
+  "version": "1.0.0",
+  "description": "Warning: contains both facts and opinions about es-whateverthefuck.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node --harmony test",
+    "watch": "watchify test/index.js -o test/index.browser.js -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoryNunn/es-twentysixnext.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KoryNunn/es-twentysixnext/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/es-twentysixnext#readme",
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
