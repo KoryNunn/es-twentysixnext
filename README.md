@@ -160,17 +160,18 @@ function createPerson(firstName, surname, age){
 
 ## The Bad
 
-~~Functionally, there is nothing bad about these features~~
+Functionally, there is nothing bad about these features
 
-Nevermind, of cource there are problems.
+~~Nevermind, of cource there are problems.~~
 
 ```
 var x = {y} //legit
 var x = {get} // fucked
 ```
 
-Because `get` is a magic property used for getter/setters..
+~~Because `get` is a magic property used for getter/setters..~~
 
+NEVERMIND AGAIN! That was just a v8 bug which is now fixed.
 
 ## The ugly
 
@@ -271,17 +272,18 @@ Nice...........
 Assign values to variables out of objects using pattern matching.
 
 ```
-function tellAge(person){
-    var {firstName, age} = person;
+function distance(point1, point2){
+    var [x1, y1] = point1,
+        [x2, y2] = point2;
 
-    return template('Hi {firstName}, you are {age}');
+    return Math.sqrt(
+        Math.pow(x1 - x2, 2) +
+        Math.pow(y1 - y2, 2)
+    );
 }
 
-tellAge({
-    firstName: 'Jill',
-    age: 60
-});
-// -> 'Hi Jill, you are 60'
+distance([10, 10], [20, 20]);
+// -> 14.142135623730951
 ```
 
 ## The good
@@ -344,13 +346,21 @@ Again, this stuff is excelent. These are features that you can't trivially imple
 
 ## The ugly
 
-Can't think of anything.
+Defaults accept destructuring assignment. This is a HORRIBLE HORRIBLE feature!
+
+Via @yoshuawuyts
+```
+var fn = ({foo = 3, bar = 4} = {}) => {};
+```
+
+READABILITY--!
 
 # let + const
 
 UUuuuuguhhh.
 
 `let`: block scoped `var`
+
 `const` `let` but you can't assing to it twice.
 
 ## The good
