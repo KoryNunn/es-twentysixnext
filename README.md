@@ -120,6 +120,12 @@ Oh right, no implicit returns anymore..
 
 Nice..
 
+Of course you can use parentheses to get the result we want:
+
+```
+[1, 2, 3].map(x => ({x})) // -> [{x: 1}, {x: 2}, {x: 3}]
+```
+
 # classes
 
 I can't. No. Just don't.
