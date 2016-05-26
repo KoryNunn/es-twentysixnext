@@ -4,6 +4,8 @@ Warning: contains both facts and opinions about es-whateverthefuck.
 
 Many things taken from here: https://github.com/lukehoban/es6features
 
+**My opinions are subject to pull requests.**
+
 # arrows
 
 ## What
