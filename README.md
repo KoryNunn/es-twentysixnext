@@ -633,6 +633,8 @@ I honestly have never come across any situation where promises have looked like 
 
 ** CONTINUE RANT **
 
+SHAMELESS PLUG: I made a thing that is what I'd have like promises to be: https://github.com/KoryNunn/righto
+
 # math + number + string + array + object APIs
 
 ## What
