@@ -381,8 +381,8 @@ let is just var but block-scoped. Rather than spending 20s to learn how JS works
 
 ## The ugly
 
-Attempting to assign a value to a const after declaration silently fails,
-but returns the value you attempted to assign.
+~Attempting to assign a value to a const after declaration silently fails,
+but returns the value you attempted to assign.~
 
 ```
 const x = 10; // -> 10
@@ -392,12 +392,17 @@ x = 20; // -> 20
 x; // -> 10
 ```
 
-Declairing a const without immediately assigning a value results in `undefined` as expected,
-which is effectivly totally pointless.
+UPDATE: FIXED! latest browsers and node now throw.
+
+
+~Declairing a const without immediately assigning a value results in `undefined` as expected,
+which is effectivly totally pointless.~
 
 ```
 const x; -> undefined, forever. Pointless.
 ```
+
+UPDATE: FIXED! latest browsers and node now throw.
 
 # iterators + for..of
 
